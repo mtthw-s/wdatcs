@@ -33,6 +33,11 @@ article{
     justify-content: center;
     padding-right: 1.5em;
 }
+
+.inline-nav li a{
+    display: flex;
+    flex-direction: column;
+}
 .inline-nav li{
     padding-left: .5em;
     padding-right: .5em;
@@ -46,6 +51,24 @@ article{
 .dessert-div{
     text-align: center;
 }
+
+.inline-nav li img{
+    height:213px;
+    width:320px;
+    
+}
+
+.inline-nav li{
+    background-image: url("../images/cake-small.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
 .center-wrapper{
     text-align: center;
+}
+
+.image-link{
+    height:213px;
+    width:320px;
 }
