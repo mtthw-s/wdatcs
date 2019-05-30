@@ -2,21 +2,42 @@ header{
     text-align: center;
     height: 10vw;
 }
+body{
+    /*padding-top: 0;*/
+    /*border-top: 0;*/
+    box-sizing: border-box;
+	margin: 0;
+}
 
 .row{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
-h3{
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 50%;
+}
+
+.dessert-div h3{
     font-size: 2em;
     margin-top: 10%;
     margin-bottom: 5%;
 }
 
+aside{
+    margin-right: 1em;
+    width: 20%;
+}
+
 article{
     padding-left: 1em;
+    padding-right: 1em;
 }
 
 .recipe-links{
@@ -58,11 +79,11 @@ article{
     
 }
 
-.inline-nav li{
-    background-image: url("../images/cake-small.jpg");
-    background-position: center center;
-    background-size: cover;
-}
+/*.inline-nav li{*/
+/*    background-image: url("../images/cake-small.jpg");*/
+/*    background-position: center center;*/
+/*    background-size: cover;*/
+/*}*/
 
 .center-wrapper{
     text-align: center;
@@ -72,3 +93,46 @@ article{
     height:213px;
     width:320px;
 }
+
+.food h1{
+    font-size: 3em;
+    color: rgb(255,255,255);
+    margin-top: 5px;
+}
+
+.reviews-div{
+    border: 1px solid black;
+    /*background-color: #eee;*/
+}
+
+.review-div{
+    border-bottom: 1px solid black;
+    background-color: #eee;
+    padding-left: 1em;
+    margin-top: 0;
+    padding-top: .2em;
+}
+
+#review-form{
+    display: none;
+}
+
+.cake{
+    background-image: url("./images/cake-md.jpg");
+}
+.pie{
+    background-image: url("./images/pie-md.jpg");
+}
+.cup{
+    background-image: url("./images/cup-md.jpg");
+}
+.cookies{
+    background-image: url("./images/cookies-md.jpg");
+}
+
+.food{
+    background-position: center center;
+    background-size: cover;
+}
+
+

@@ -9,7 +9,7 @@
     <body>
         
 <!-------------header------------->
-        <header>
+        <header class="cake food">
             <h1>Cake</h1>
             <a href="../index.html" >Return Home</a>
         </header>
@@ -17,15 +17,25 @@
 <!-------------main------------->
         <main class="row">
             <aside>
-               <h3>Ingrediants</h3>
-               <ul class="recipe-links">
-                   <li>Ingrediant 1</li>
-                   <li>Ingrediant 2</li>
-                   <li>Ingrediant 3</li>
-                   <li>Ingrediant 4</li>
-                   <li>Ingrediant 5</li>
-                   <li>Ingrediant 6</li>
-               </ul>
+               <h3>Ingredients</h3>
+               <table class="recipe-links">
+                   <tr>
+                       <td>2 cups</td>
+                       <td>Flour</td>
+                   </tr>
+                   <tr>
+                       <td>1 cup</td>
+                       <td>Milk</td>
+                   </tr>
+                   <tr>
+                       <td>1 tsp</td>
+                       <td>vanilla</td>
+                   </tr>
+                   <tr>
+                       <td>4 cups</td>
+                       <td>Sugar</td>
+                   </tr>
+               </table>
             </aside>
             <article>
                 <h3>Directions</h3>
@@ -41,8 +51,33 @@
                     <li>Frost</li>
                     <li>Enjoy</li>
                 </ol>
+                <input type="button" name="show-form" value="Review" onclick="document.getElementById('review-form').style.display = 'block';"/>
+                <div class="review-form" id="review-form">
+                    <form>
+                        <label for="title">User name</label>
+                        <input type="text" name="user"/>
+                        <label for="title">Title</label>
+                        <input type="text" name="title"/>
+                        <label for="review">Review</label>
+                        <textarea rows="8" name="review"></textarea>
+                        <input type="submit" value="Submit"/>
+                    </form>
+                </div>
+                <div class="reviews-div">
+                    <div class="review-div">
+                        <p>user123</p>
+                        <h4>Review Title</h4>
+                        <p>This is a review of a really tasty treat.</p>
+                    </div>
+                    <div class="review-div">
+                        <p>user321</p>
+                        <h4>Review Title</h4>
+                        <p>Here we have another review</p>
+                    </div>
+                </div>
             </article>
         </main>
+        
         
 <!-------------footer------------->
         <footer class="row">
