@@ -51,7 +51,8 @@
                     <li>Frost</li>
                     <li>Enjoy</li>
                 </ol>
-                <input type="button" name="show-form" value="Review" onclick="document.getElementById('review-form').style.display = 'block';"/>
+                <!--<input type="button" name="show-form" value="Review" onclick="document.getElementById('review-form').style.display = 'block';"/>-->
+                <input type="button" name="show-form" value="Review" onclick="app.showElement('review-form');"/>
                 <div class="review-form" id="review-form">
                     <form>
                         <label for="title">User name</label>
@@ -92,4 +93,5 @@
             </nav>
         </footer>
     </body>
+    <script type="text/javascript" src="../scripts/main.js"></script>
 </html>
