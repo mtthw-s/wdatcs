@@ -12,6 +12,14 @@
         <header class="cake food">
             <h1>Cake</h1>
             <a href="../index.html" >Return Home</a>
+            <nav>
+                <ul class="inline-nav">
+                    <li><a href="../pages/cake.html" >Cake</a></li>
+                    <li><a href="../pages/cookies.html">Cookies</a></li>
+                    <li><a href="../pages/pie.html" >Pie</a></li>
+                    <li><a href="../pages/cup.html" >Cupcakes</a></li>
+                </ul>
+            </nav>
         </header>
         
 <!-------------main------------->
@@ -54,7 +62,7 @@
                 <!--<input type="button" name="show-form" value="Review" onclick="document.getElementById('review-form').style.display = 'block';"/>-->
                 <input type="button" name="show-form" value="Review" onclick="app.showElement('review-form');"/>
                 <div class="review-form" id="review-form">
-                    <form>
+                    <form onsubmit="return app.createNewReview()">
                         <label for="title">User name</label>
                         <input type="text" name="user"/>
                         <label for="title">Title</label>
@@ -64,7 +72,7 @@
                         <input type="submit" value="Submit"/>
                     </form>
                 </div>
-                <div class="reviews-div">
+                <div class="reviews-div" id="reviewList">
                     <div class="review-div">
                         <p>user123</p>
                         <h4>Review Title</h4>
@@ -84,8 +92,8 @@
         <footer class="row">
             <p>&copy; 2019 Matt Sanford</p>
             <nav>
-                <p>Links to class resources (and credits for the recipes)</p>
-                <ul>
+                <!--<p>Links to class resources (and credits for the recipes)</p>-->
+                <ul class="inline-nav">
                     <li><a href="#" >Evergreen Home Page</a></li>
                     <li><a href="#" >Canvas Page</a></li>
                     <li><a href="#" >location of actual recipes</a></li>
