@@ -21,14 +21,16 @@ body{
     /*border-top: 0;*/
     min-height: 100vh;
     box-sizing: border-box;
-    margin-top: 25vw;
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0;
 	/*height: 100%;*/
 	/*width: 100%;*/
 	display: flex;
-  flex-direction: column;
+    flex-direction: column;
+}
+main{
+    margin-top: 25vw;
 }
 
 .row{
@@ -56,7 +58,9 @@ aside{
     /*margin-right: 1em;*/
     /*width: 25% !important;*/
     /*position: fixed;*/
-    /*margin-top: 1vw;*/
+    margin-top: 0;
+    padding-right: 1em;
+    border-right: 1px solid black;
     /*width: 30%;*/
     /*position: fixed;*/
     /*z-index: 1;*/
@@ -68,7 +72,7 @@ aside{
 }
 
 .article{
-    margin-top: 1vw;
+    /*margin-top: 1vw;*/
     /*margin-left: 25%;*/
     padding-left: 1em;
     padding-right: 1em;
@@ -98,7 +102,7 @@ aside{
 .inline-nav li{
     padding-left: .5em;
     padding-right: .5em;
-    border-left: 1px solid black;
+    border-left: 1px solid white;
 }
 .inline-nav li:first-child{
     border-left: none;
@@ -121,7 +125,7 @@ header a{
 header a:hover{
     background-color: rgba(0, 0, 0, 0.2);
     font-weight: bold;
-    size: 3em;
+    size: 4em;
 }
 
 .header{
@@ -225,6 +229,14 @@ ol li::before {
     font-weight: bold;
     padding: 3px 8px;
     border-radius: 3px;
+}
+
+.main-header{
+    height: 15vw;
+}
+
+.main-main{
+    margin-top: 15vw;
 }
 /**************TEST**************/
 
